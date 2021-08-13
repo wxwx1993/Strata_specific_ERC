@@ -21,7 +21,7 @@ library("parallel")
 require(ggplot2)
 require(cowplot)
 require(ggExtra)
-
+set.seed(1)
 matching_smooth<-function(pseudo.out=dose.response.mean,
                           a,
                           bw.seq=seq(1,1,length.out=10),
